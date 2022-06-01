@@ -8,7 +8,7 @@ tasks:
       wasm-bindgen --out-dir ./out/ --target web ./target/
 vscode:
   extensions:
-    - rust-lang.rust-analyzer
+    - matklad.rust-analyzer
     - rust-lang.rust
     - bungcip.better-toml
     - streetsidesoftware.code-spell-checker
