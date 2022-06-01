@@ -10,5 +10,7 @@ fn main() {
 }
 
 fn add_systems(app : &mut App) {
-    app.add_system(hello_world::hello_world);
+    app
+        .add_plugins(DefaultPlugins)
+        .add_system(hello_world::hello_world);
 }
