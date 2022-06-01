@@ -1,6 +1,7 @@
-use bevy::prelude::*;
+mod systems;
 
-mod hello_world;
+use bevy::prelude::*;
+use systems::*;
 
 fn main() {
     let mut app = App::new();
