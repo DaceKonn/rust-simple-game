@@ -9,7 +9,6 @@ tasks:
 vscode:
   extensions:
     - matklad.rust-analyzer
-    - rust-lang.rust
     - bungcip.better-toml
     - streetsidesoftware.code-spell-checker
     - serayuzgur.crates
