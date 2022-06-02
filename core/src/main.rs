@@ -1,7 +1,6 @@
-mod systems;
 
 use bevy::prelude::*;
-use systems::*;
+use practice::systems::*;
 
 fn main() {
     let mut app = App::new();
