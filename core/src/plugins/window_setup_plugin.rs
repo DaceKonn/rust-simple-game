@@ -20,7 +20,7 @@ impl Plugin for WindowSetupPlugin {
             .insert_resource(WindowDescriptor {
                 width: self.height * RESOLUTION,
                 height: self.height,
-                title: "Bevy Tutorial".to_string(),
+                title: "Rust Simple Game".to_string(),
                 resizable: false,
                 ..Default::default()
             });
