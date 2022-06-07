@@ -5,7 +5,7 @@ tasks:
     init: |
       cargo build --features bevy/dynamic --target wasm32-unknown-unknown
     command: |
-      cargo run --target wasm32-unknown-unknown &&
+      cargo run --target wasm32-unknown-unknown --features bevy/dynamic &&
       wasm-bindgen --out-dir ./out/ --target web ./target/
 vscode:
   extensions:
