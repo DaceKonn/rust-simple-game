@@ -1,7 +1,8 @@
-mod systems;
+mod plugins;
 
 use bevy::prelude::*;
-use systems::*;
+use plugins::window_setup_plugin::*;
+use practice::PracticePlugin;
 
 fn main() {
     let mut app = App::new();
@@ -10,8 +11,9 @@ fn main() {
 }
 
 fn add_systems(app : &mut App) {
+
     app
+        .add_plugin(WindowSetupPlugin::default())
         .add_plugins(DefaultPlugins)
-        .add_system(hello_world::hello_world)
-        .add_system(simple_rectangle::setup);
+        .add_plugin(PracticePlugin);
 }
