@@ -1,15 +1,13 @@
 tasks:
-  - before: |
-      rustup target install wasm32-unknown-unknown &&
-      cargo install wasm-server-runner 
-    init: |
-      cargo build --features bevy/dynamic --target wasm32-unknown-unknown
+  - init: |
+      cargo build --target wasm32-unknown-unknown
     command: |
-      cargo run --target wasm32-unknown-unknown --features bevy/dynamic &&
-      wasm-bindgen --out-dir ./out/ --target web ./target/
+      cargo run --target wasm32-unknown-unknown
 vscode:
   extensions:
     - matklad.rust-analyzer
     - bungcip.better-toml
     - streetsidesoftware.code-spell-checker
     - serayuzgur.crates
+image:
+  file: .gitpod.Dockerfile
